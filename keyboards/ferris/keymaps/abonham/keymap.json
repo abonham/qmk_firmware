@@ -37,27 +37,29 @@
         "RGUI_T(KC_BSPC)","LT(7,KC_ENT)"
       ],
       [
-        "KC_1", "KC_2", "KC_TRNS", "KC_4", "KC_5",
-        "KC_6", "KC_7", "KC_8", "KC_9", "KC_0",
+        "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS",
+        "KC_AMPR", "KC_ASTR", "KC_LPRN", "KC_RPRN", "KC_BSLS",
 
-        "LSFT_T(KC_ESC)","KC_TRNS","KC_NO","KC_3","KC_TRNS",
-        "KC_TRNS","KC_TRNS","KC_TRNS","KC_QUOT","RSFT_T(KC_ENT)",
+        "LSFT_T(KC_ESC)", "KC_TRNS", "KC_NO", "KC_TRNS", "KC_TRNS",
+        "KC_DLR", "KC_PERC", "KC_CIRC", "KC_QUOT", "RSFT_T(KC_ENT)",
 
-        "KC_EXLM","KC_AT","KC_HASH","KC_DLR","KC_PERC",
-        "KC_CIRC","KC_AMPR","KC_ASTR","KC_LPRN","KC_RPRN",
+        "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS",
+        "KC_EXLM", "KC_AT", "KC_HASH", "KC_LBRC", "KC_RBRC",
 
-        "MACRO_0","MACRO_1",
-        "MACRO_2","MACRO_3"
+        "ANY(MACRO_0)",
+        "ANY(MACRO_1)",
+        "ANY(MACRO_2)",
+        "ANY(MACRO_3)"
       ],
       [
-        "KC_TRNS", "KC_TRNS", "KC_PGUP", "KC_TRNS", "KC_TRNS",
-        "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS",
+        "KC_PAST", "KC_P7", "KC_P8", "KC_P9", "KC_PMNS",
+        "KC_PSLS", "KC_PGUP", "KC_NO", "KC_NO", "KC_NO",
 
-        "KC_LEFT", "KC_UP", "KC_DOWN", "KC_RGHT", "KC_TRNS",
-        "KC_TRNS", "KC_LGUI", "KC_NO", "LCTL(KC_LALT)", "LCA(KC_LSFT)",
+        "KC_P0", "KC_P4", "KC_P5", "KC_P6", "KC_PPLS",
+        "KC_PAST", "KC_HOME", "KC_NO", "KC_END", "KC_NO",
 
-        "KC_TRNS", "KC_HOME", "KC_PGDN", "KC_END", "KC_TRNS",
-        "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS",
+        "KC_PDOT", "KC_P1", "KC_P2", "KC_P3", "KC_PEQL",
+        "KC_PENT", "KC_PGDN", "KC_RALT", "KC_RGUI", "KC_RCTL",
 
         "KC_VOLD",
         "KC_MPLY",
