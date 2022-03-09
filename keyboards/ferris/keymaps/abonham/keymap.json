@@ -61,7 +61,7 @@
 
         "KC_VOLD",
         "KC_MPLY",
-        "KC_MUTE",
+        "KC_TRNS",
         "KC_VOLU"
       ],
       [
@@ -84,9 +84,9 @@
         "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS",
 
         "KC_LCBR", "KC_RCBR", "KC_LPRN", "KC_RPRN", "KC_AT",
-        "KC_TRNS", "KC_NO", "KC_EQL", "KC_PLUS", "KC_PERC",
+        "KC_TRNS", "KC_NO", "KC_MINS", "KC_PLUS", "KC_PERC",
 
-        "KC_TRNS", "KC_EXLM", "KC_LBRC", "KC_RBRC", "KC_TRNS",
+        "KC_TRNS", "KC_EXLM", "KC_LBRC", "KC_RBRC", "KC_EQL",
         "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS", "KC_TRNS",
 
         "KC_VOLD",
