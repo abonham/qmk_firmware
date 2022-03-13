@@ -19,6 +19,14 @@ enum custom_keycodes {          // Make sure have the awesome keycode ready
   SSHOT
 };
 
+#ifdef ANALOG_JOYSTICK_ENABLE
+joystick_config_t_joystick_axes[JOYSTICK_AXES_COUNT] = {
+    [0] = JOYSTICK_AXIS_VIRTUAL,
+    [1] = JOYSTICK_AXIS_VIRTUAL,
+    [2] = JOYSTICK_AXIS_VIRTUAL,
+};
+#endif
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_split_3x5_2(KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, /**/ LSFT_T(KC_A), LT(5,KC_S), LT(1,KC_D), LT(3,KC_F), KC_G, KC_H, LT(4,KC_J), LT(2,KC_K), LT(6,KC_L), LSFT_T(KC_SCLN), SGUI_T(KC_Z), /**/ LCTL_T(KC_X), LALT_T(KC_C), KC_V, LCAG_T(KC_B), KC_N, KC_M, LALT_T(KC_COMM), LCTL_T(KC_DOT), LCAG_T(KC_SLSH), /**/ LT(7,KC_ESC), LGUI_T(KC_SPC), RGUI_T(KC_BSPC), LT(7,KC_ENT)),
 	[1] = LAYOUT_split_3x5_2(KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_BSLS, KC_AMPR, KC_ASTR, KC_GRV, KC_TRNS, /**/ LSFT_T(KC_ESC), KC_TRNS, KC_NO, KC_TRNS, KC_TRNS, KC_QUOT, KC_DLR, KC_PERC, KC_CIRC, RSFT_T(KC_QUOT), KC_TRNS, /**/ KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_SLSH, KC_EXLM, KC_AT, KC_HASH, KC_TRNS, /**/ KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
