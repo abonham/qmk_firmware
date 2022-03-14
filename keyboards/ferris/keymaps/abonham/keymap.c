@@ -29,10 +29,10 @@ joystick_config_t_joystick_axes[JOYSTICK_AXES_COUNT] = {
 
 // clang-format off
 #define _QWERTY LAYOUT_split_3x5_2( \
-    KC_Q, KC_W, KC_E, KC_R, KC_T,                               KC_Y, KC_U, KC_I, KC_O, KC_P, \
-    LSFT_T(KC_A), LT(5,KC_S), LT(1,KC_D), LT(3,KC_F), KC_G,     KC_H, LT(4,KC_J), LT(2,KC_K), LT(6,KC_L), LSFT_T(KC_SCLN), SGUI_T(KC_Z), \
-    LCTL_T(KC_X), LALT_T(KC_C), KC_V, LCAG_T(KC_B), KC_N,       KC_M, LALT_T(KC_COMM), LCTL_T(KC_DOT), LCAG_T(KC_SLSH), \
-    LT(7,KC_ESC), LGUI_T(KC_SPC),                               RGUI_T(KC_BSPC), LT(7,KC_ENT) \
+    KC_Q, KC_W, KC_E, KC_R, KC_T,                                   KC_Y, KC_U, KC_I, KC_O, KC_P, \
+    LSFT_T(KC_A), LT(1,KC_S), LT(2,KC_D), LT(3,KC_F), KC_G,         KC_H, LT(4,KC_J), LT(2,KC_K), LT(5,KC_L), LSFT_T(KC_SCLN), \
+    SGUI_T(KC_Z), LCTL_T(KC_X), LALT_T(KC_C), KC_V,  LCAG_T(KC_B),  KC_N, KC_M, LALT_T(KC_COMM), LCTL_T(KC_DOT), LCAG_T(KC_SLSH), \
+    LT(7,KC_ESC), LGUI_T(KC_SPC),                                   RGUI_T(KC_BSPC), LT(7,KC_ENT) \
 )
 
 #define _MORE_SYMBOLS LAYOUT_split_3x5_2( \
@@ -43,10 +43,10 @@ joystick_config_t_joystick_axes[JOYSTICK_AXES_COUNT] = {
 )
 
 #define _NUMBERS LAYOUT_split_3x5_2( \
-    KC_PAST, KC_7, KC_8, KC_9, KC_PMNS,                         KC_PSLS, KC_PGUP, KC_NO, KC_NO, KC_NO, \
-    KC_0, KC_4, KC_5, KC_6, KC_PPLS,                            KC_PAST, KC_HOME, KC_NO, KC_END, KC_NO, \
-    KC_PDOT, KC_1, KC_2, KC_3, KC_PEQL,                         KC_PENT, KC_PGDN, KC_RALT, LT(7,KC_RGUI), KC_RCTL, \
-    KC_VOLD, KC_MPLY,                                           KC_TRNS, KC_VOLU \
+    KC_LPRN, KC_AMPR, KC_ASTR, KC_GRV, KC_RPRN,                 KC_PAST, KC_7, KC_8, KC_9, KC_PMNS, \
+    KC_LCBR, KC_DLR, KC_PERC, KC_CIRC, KC_RCBR,                 KC_0, KC_4, KC_5, KC_6, KC_PPLS, \
+    KC_LBRC, KC_EXLM, KC_AT, KC_HASH, KC_RBRC,                  KC_PDOT, KC_1, KC_2, KC_3, KC_PEQL, \
+    KC_ESC, KC_BSLS,                                            KC_SLSH, LT(7,KC_ENT) \
 )
 
 #define _SYMBOLS LAYOUT_split_3x5_2( \
