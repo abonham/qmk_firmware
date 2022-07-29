@@ -65,7 +65,7 @@ joystick_config_t_joystick_axes[JOYSTICK_AXES_COUNT] = {
 #define _QWERTY LAYOUT_split_3x5_2( \
     KC_Q, KC_W, KC_E, KC_R, KC_T,                                   KC_Y, KC_U, KC_I, KC_O, KC_P, \
     LSFT_T(KC_A), LT(1,KC_S), LT(2,KC_D), LT(3,KC_F), KC_G,         KC_H, LT(4,KC_J), LT(2,KC_K), LT(5,KC_L), LSFT_T(KC_SCLN), \
-    SGUI_T(KC_Z), LCTL_T(KC_X), LALT_T(KC_C), KC_V,  LCAG_T(KC_B),  KC_N, KC_M, LALT_T(KC_COMM), LCTL_T(KC_DOT), LCAG_T(KC_SLSH), \
+    SGUI_T(KC_Z), LCTL_T(KC_X), LALT_T(KC_C), KC_V,  KC_B,  KC_N, KC_M, LALT_T(KC_COMM), LCTL_T(KC_DOT), LCAG_T(KC_SLSH), \
     TD(TD_MOD_7), TD(TD_GUI_MOD_7_SPC),                             RGUI_T(KC_BSPC), TD(TD_GUI_MOD_7_ENT) \
 )
 
