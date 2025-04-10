@@ -1,0 +1,2 @@
+#define SOFT_SERIAL_PIN GP1
+#define EE_HANDS
