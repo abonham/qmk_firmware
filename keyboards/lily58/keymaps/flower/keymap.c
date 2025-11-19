@@ -30,10 +30,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
 	),
 	[_SYSTEM] = LAYOUT(
-	   QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+	   QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, QK_BOOT,
 	   KC_NO, KC_NO, KC_NO, KC_NO, EH_RGHT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 	   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, EH_LEFT, KC_NO, KC_NO,
 	   CG_TOGG, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, CG_SWAP, CG_NORM, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
 	   KC_TRNS, KC_TRNS, KC_TRNS, CG_TOGG, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
 	),
 };
+
+bool process_detected_host_os_kb(os_variant_t detected_os) {
+    if (!process_detected_host_os_user(detected_os)) {
+        return false;
+    }
+    switch (detected_os) {
+        case OS_MACOS:
+        case OS_IOS:
+            keymap_config.swap_lctl_lgui = false;
+            keymap_config.swap_rctl_rgui = false;
+            break;
+        case OS_WINDOWS:
+            keymap_config.swap_lctl_lgui = true;
+            keymap_config.swap_rctl_rgui = true;
+            break;
+        case OS_LINUX:
+            keymap_config.swap_lctl_lgui = true;
+            keymap_config.swap_rctl_rgui = true;
+            break;
+        case OS_UNSURE:
+            break;
+    }
+
+    return true;
+}
